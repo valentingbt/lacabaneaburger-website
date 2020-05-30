@@ -299,9 +299,9 @@ nav ul a:hover {
     margin-top: 25px;
 }
 
-#section_3 > div:nth-child(2) {
+/* #section_3 > div:nth-child(2) {
     border-bottom: 2px solid #3c1b0c;
-}
+} */
 
 #section_3 .col,
 #section_6 > div:nth-child(1) > div > div:nth-child(1) {
@@ -765,14 +765,14 @@ footer > div > div > div > div:nth-child(3) > a:nth-child(2) {
         padding-right: 0;
     }
 
-    #section_3 > div:nth-child(2) > div > div > div > div.col.s12.m1.l1.xl1,
-    #section_3 > div:nth-child(3) > div > div > div > div.col.s12.m1.l1.xl1 {
+    #section_3 > div:nth-child(3) > div > div > div > div.col.s12.m1.l1.xl1,
+    #section_3 > div:nth-child(4) > div > div > div > div.col.s12.m1.l1.xl1 {
         text-align: center;
         padding-top: 5%;
     }
 
-    #section_3 > div:nth-child(2) > div > div > div > div.col.s12.m11.l11.xl11,
-    #section_3 > div:nth-child(3) > div > div > div > div.col.s12.m11.l11.xl11 {
+    #section_3 > div:nth-child(3) > div > div > div > div.col.s12.m11.l11.xl11,
+    #section_3 > div:nth-child(4) > div > div > div > div.col.s12.m11.l11.xl11 {
         text-align: center;
     }
 
