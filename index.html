@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La Cabane à Burger</title>
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate({
+                    scrollTop: $(page).offset().top
+                }, speed); // Go
+                return false;
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <nav role="navigation">
+        <div class="nav-wrapper container">
+            <ul class="right hide-on-med-and-down">
+                <li><a class="js-scrollTo" href="#section_1">Accueil</a></li>
+                <li><a class="js-scrollTo" href="#section_3">La carte</a></li>
+                <li><a href="concept.html">Le concept</a></li>
+                <li><a href="concept.html" class="js-scrollTo" href="#section_12">La franchise</a></li>
+                <li><a href="contact.html">Infos pratiques</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a class="js-scrollTo" href="#section_1">Accueil</a></li>
+                <li><a class="js-scrollTo" href="#section_3">La carte</a></li>
+                <li><a href="concept.html">Le concept</a></li>
+                <li><a href="concept.html" class="js-scrollTo" href="#section_12">La franchise</a></li>
+                <li><a href="contact.html">Infos pratiques</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div>
+                <div class="row center">
+                    <img alt="logo_cabane_burger" src="logo_cabane_burger.png">
+                </div>
+                <div id="h2_center_title">
+                    <h2>Les burgers gourmets<br>à côté de chez vous</h2>
+                </div>
+                <div>
+                    <img alt="underline" src="underline.png">
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="bck_header_index.png" alt="bck_header_index"></div>
+    </div>
+    <div id="section_1" class="container">
+        <div class="section">
+            <div class="row  valign-wrapper">
+                <div id="section_1_left" class="col s12 m12 l6 xl6">
+                    <p class="light">
+                        Pour déguster des burgers gourmets, préparés à la demande et sur commande au coin de la rue, rendez-vous à La Cabane à Burger ! Notre pain bio, créé uniquement pour notre carte, s’accorde avec des produits frais sélectionnés par nos soins pour vous régaler et réveiller vos papilles. Chaque mois, retrouvez une recette originale de saison, accompagnée de frites fraiches de La Cabane.
+                    </p>
+                </div>
+                <div id="section_1_right" class="col s12 m12 l6 xl6">
+                    <a href="concept.html"><img alt="ici_icon" src="ici_icon.png"></a>
+                    <p>Des infos sur la franchise ?<br>C'est par ici ?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="carousel_1.png" alt="">
+            </div>
+            <div class="item">
+                <img src="carousel_2.png" alt="">
+            </div>
+            <div class="item">
+                <img src="carousel_3.png" alt="">
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left">
+                <img src="gauche_carousel.png">
+            </span>
+            <span class="sr-only"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right">
+                <img src="droite_carousel.png">
+            </span>
+            <span class="sr-only"></span>
+        </a>
+    </div>
+    <div id="section_3" class="container">
+        <div class="section">
+            <div class="row">
+                <h3>La carte</h3>
+                <div class="center">
+                    <img alt="underline" src="underline_black.png">
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m6 l3 xl3">
+                    <h4>Savoyard</h4>
+                    <p>Boeuf haché, reblochon au lait cru, confit d’oignons jaunes, poitrine fumée, sauce miel moutarde.</p>
+                    <p class="bold color_orange">9,90€</p>
+                    <div class="row underlined_orange valign-wrapper">
+                        <div class="col s12 m1 l1 xl1">
+                            <img class="left_margin" src="menu_icon.png">
+                        </div>
+                        <div class="col s12 m11 l11 xl11">
+                            <p class="bold margin_bottom_none">Burger / frites / soft 33 cl</p>
+                            <p class="bold margin_top_none">12,50€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3 xl3">
+                    <h4>Normand</h4>
+                    <p>Boeuf haché, camembert au lait cru, confit d’oignons rouges, jeunes pousses (salade), sauce poivre vert.</p>
+                    <p class="bold color_orange">9,50€</p>
+                    <div class="row underlined_orange valign-wrapper">
+                        <div class="col s12 m1 l1 xl1">
+                            <img class="left_margin" src="menu_icon.png">
+                        </div>
+                        <div class="col s12 m11 l11 xl11">
+                            <p class="bold margin_bottom_none">Burger / frites / soft 33 cl</p>
+                            <p class="bold margin_top_none">11,90€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3 xl3">
+                    <h4>Nantais</h4>
+                    <p>Boeuf haché, Curé Nantais, rondelles d’oignons rouges, mâche, vinaigrette de La Cabane.</p>
+                    <p class="bold color_orange">9,50€</p>
+                    <div class="row underlined_orange valign-wrapper">
+                        <div class="col s12 m1 l1 xl1">
+                            <img class="left_margin" src="menu_icon.png">
+                        </div>
+                        <div class="col s12 m11 l11 xl11">
+                            <p class="bold margin_bottom_none">Burger / frites / soft 33 cl</p>
+                            <p class="bold margin_top_none">12,50€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3 xl3">
+                    <h4>Montagnard</h4>
+                    <p>Boeuf haché, raclette au lait cru, confit d’oignons rouges, saucisson fumé à l’ail, sauce barbecue, herbes de Provence</p>
+                    <p class="bold color_orange">9,90€</p>
+                    <div class="row underlined_orange valign-wrapper">
+                        <div class="col s12 m1 l1 xl1">
+                            <img class="left_margin" src="menu_icon.png">
+                        </div>
+                        <div class="col s12 m11 l11 xl11">
+                            <p class="bold margin_bottom_none">Burger / frites / soft 33 cl</p>
+                            <p class="bold margin_top_none">12,50€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m6 l3 xl3">
+                    <h4>Cowboy</h4>
+                    <p>Boeuf haché, cheddar, rondelle de tomate, sauce barbecue.</p>
+                    <p class="bold color_orange">7,90€</p>
+                    <div class="row underlined_orange valign-wrapper">
+                        <div class="col s12 m1 l1 xl1">
+                            <img class="left_margin" src="menu_icon.png">
+                        </div>
+                        <div class="col s12 m11 l11 xl11">
+                            <p class="bold margin_bottom_none">Burger / frites / soft 33 cl</p>
+                            <p class="bold margin_top_none">10,50€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3 xl3">
+                    <h4>Indien</h4>
+                    <p>Émincé de poulet rôti aux épices à l’indienne, chèvre, confit d’oignons jaunes, jeunes pousses (salade), sauce curry.</p>
+                    <p class="bold color_orange">8,90€</p>
+                    <div class="row underlined_orange valign-wrapper">
+                        <div class="col s12 m1 l1 xl1">
+                            <img class="left_margin" src="menu_icon.png">
+                        </div>
+                        <div class="col s12 m11 l11 xl11">
+                            <p class="bold margin_bottom_none">Burger / frites / soft 33 cl</p>
+                            <p class="bold margin_top_none">11,50€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3 xl3">
+                    <h4>Kebab</h4>
+                    <p>Émincé de kebab, rondelle de tomate, rondelles d’oignons rouges, jeunes pousses (salade), sauce kebab.
+                    </p>
+                    <p class="bold color_orange">7,90€</p>
+                    <div class="row underlined_orange valign-wrapper">
+                        <div class="col s12 m1 l1 xl1">
+                            <img class="left_margin" src="menu_icon.png">
+                        </div>
+                        <div class="col s12 m11 l11 xl11">
+                            <p class="bold margin_bottom_none">Burger / frites / soft 33 cl</p>
+                            <p class="bold margin_top_none">12,50€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m6 l3 xl3">
+                    <h4>Cab</h4>
+                    <p>Boeuf haché, cheddar, poitrine fumée, rondelle de tomate, rondelles d’oignons rouges, jeunes pousses (salade), sauce barbecue.</p>
+                    <p class="bold color_orange">9,90€</p>
+                    <div class="row underlined_orange valign-wrapper">
+                        <div class="col s12 m1 l1 xl1">
+                            <img class="left_margin" src="menu_icon.png">
+                        </div>
+                        <div class="col s12 m11 l11 xl11">
+                            <p class="bold margin_bottom_none">Burger / frites / soft 33 cl</p>
+                            <p class="bold margin_top_none">12,50€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="row center">
+            <a id="commande_button" href="contact.html">PASSER UNE COMMANDE</a>
+        </div>
+    </div>
+    <div id="section_4">
+        <div class="container">
+            <div class="section">
+                <div class="row valign-wrapper">
+                    <div class="col s12 m3 l3 xl3">
+                        <img src="info_icon.png" alt="info_icon"></div>
+                    <div class="col s12 m9 l9 xl9">
+                        <p class="light">La viande de nos burgers peut être remplacée par un filet de poulet pané ou une galette de pomme de terre (produits surgelés) sur simple demande à la commande. * Produit surgelé</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m12 l4 xl4">
+                        <h3>Le burger du mois</h3>
+                        <p>Chaque mois une nouvelle recette, imaginée par nos chefs pour vous proposer un burger de saison.</p>
+                    </div>
+                    <div class="col s12 m12 l4 xl4">
+                        <img src="burger_du_mois.png" alt="burger_du_mois">
+                    </div>
+                    <div class="col s12 m12 l4 xl4">
+                        <h3>Retrouvez le burger du mois sur notre page</h3>
+                        <a target="_blank" href="https://www.facebook.com/La-Cabane-A-Burger-2024129584480172/">facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section_5" class="container">
+        <div class="container center">
+            <div class="section center">
+                <div class="row center">
+                    <div class="col s12 m15ths l5ths xl5ths">
+                        <p>Pain bio<br>recette spéciale</p>
+                    </div>
+                    <div class="col s12 m15ths l5ths xl5ths">
+                        <img class="point_section_5" alt="point_section" src="point_section.png">
+                    </div>
+                    <div class="col s12 m15ths l5ths xl5ths">
+                        <p>Steak haché frais<br>viande bovine française</p>
+                    </div>
+                    <div class="col s12 m15ths l5ths xl5ths">
+                        <img class="point_section_5" alt="point_section" src="point_section.png">
+                    </div>
+                    <div class="col s12 m15ths l5ths xl5ths">
+                        <p>Frites fraiches<br>de La Cabane</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section_6">
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <div class="col s12 m12 l4 xl4">
+                        <h4>Nuggets</h4>
+                        <p>Nuggets de filet de poulet* x 6</p>
+                        <p class="bold">4,90€</p>
+                        <p>Nuggets de filet de poulet* x 9</p>
+                        <p class="bold">6,90€</p>
+                        <div class="row underlined_orange valign-wrapper">
+                            <div class="col s12 m12 l1 xl1">
+                                <img class="left_margin" src="menu_icon.png">
+                            </div>
+                            <div class="col s12 m12 l11 xl11">
+                                <p class="bold">Nuggets x9, frites, soft 33 cl<br>9,50€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m12 l4 xl4">
+                        <h4>Menu kids</h4>
+                        <p>Burger de boeuf haché, Babybel, ketchup</p>
+                        <p class="bold">ou</p>
+                        <p>4 nuggets de filet de poulet*, frites</p>
+                        <p>--</p>
+                        <p>Jus d’orange 20 cl</p>
+                        <p class="bold">ou</p>
+                        <p>Eau de source 50 cl</p>
+                        <p>--</p>
+                        <p>Compote à boire &amp; surprise</p>
+                        <p class="bold">5,90€</p>
+                    </div>
+                    <div class="col s12 m12 l4 xl4">
+                        <h4>Frites</h4>
+                        <p>Frites fraîches 150g</p>
+                        <p class="bold">2,50€</p>
+                        <p>--</p>
+                        <p>Nature</p>
+                        <p class="bold">ou</p>
+                        <p>Ail / Paprika.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="row">
+                    <div class="col s12 m12 l4 xl4">
+                        <h4>Suppléments</h4>
+                        <p>Fromage</p>
+                        <p class="bold">1,00€</p>
+                        <p>Galette PDT</p>
+                        <p class="bold">1,50€</p>
+                        <p>Steak</p>
+                        <p class="bold">3,00€</p>
+                        <p>Poitrine</p>
+                        <p class="bold">1,00€</p>
+                    </div>
+                    <div class="col s12 m12 l4 xl4">
+                        <h4>Desserts</h4>
+                        <p>Glaces et sorbets fabriqués à la ferme 140ml (Chocolat, vanille de Madagascar, caramel au beurre salé et différents parfums selon les saisons)</p>
+                        <p class="bold">3,80€</p>
+                        <p>Grand cookie</p>
+                        <p class="bold">1,50€</p>
+                        <p>Donut</p>
+                        <p class="bold">1,50€</p>
+                    </div>
+                    <div class="col s12 m12 l4 xl4">
+                        <h4>Boissons</h4>
+                        <p>Eau de source 50 cl</p>
+                        <p class="bold">1,00€</p>
+                        <p><u>Boisson Soft 33 cl :</u><br>Coca, Coca zéro, Orangina, Fanta, Sprite, Oasis, Minute Maid orange, Perrier, Ice Tea.</p>
+                        <p class="bold">2,00€</p>
+                        <p>Bière Heineken 33 cl</p>
+                        <p class="bold">2,50€</p>
+                        <p>Desperados 33 cl</p>
+                        <p class="bold">3,50€</p>
+                        <p>Rince Cochon 33 cl</p>
+                        <p class="bold">4,90€</p>
+                        <p>Café</p>
+                        <p class="bold">1,20€</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="row center">
+                    <a id="commande_button" href="contact.html">PASSER UNE COMMANDE</a>
+                </div>
+            </div>
+            <div class="section">
+                <div class="row center">
+                    <p><i>Conformément au règlement européen N1169/2011 relatif aux allergènes, tous nos burgers et accompagnements peuvent contenir les 14 substances allergènes référencées dans celui-ci. Au-delà des allergènes signalés, nous ne pouvons pas exclure la présence involontaire d'autres allergènes, consécutive à la fabrication des produits chez nos fournisseurs ou à la fabrication dans nos points de vente. La liste est disponible sur simple demande sur tous nos points de vente.<br><br>L'abus d'alcool est dangereux pour la santé, consommez avec modération.<br><br>Pour votre santé, mangez au moins 5 fruits et légumes. www.mangerbouger.fr</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="section center">
+            <div class="container">
+                <div class="row valign-wrapper">
+                    <div class="col s12 m4 l3 xl3">
+                        <p class="light center">Route de Nantes<br>Zone Industrielle du Landas<br>(parking Océane Habitat)<br>44160 PONTCHÂTEAU</p>
+                    </div>
+                    <div class="col s12 m4 l6 xl6">
+                        <p class="cursive light center">La Cabane à Burger Pontchâteau</p>
+                        <p class="cursive light center">02 51 75 39 32</p>
+                    </div>
+                    <div class="col s12 m4 l3 xl3">
+                        <a target="_blank" href="https://www.facebook.com/La-Cabane-A-Burger-2024129584480172/">
+                            <p class="light center">La Cabane à Burger</p>
+                            <img alt="fb_icon" src="fb_icon.png">
+                            <a href="mentionlegales.html"><u>Mentions légales</u></a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>

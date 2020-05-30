@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La Cabane à Burger</title>
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate({
+                    scrollTop: $(page).offset().top
+                }, speed); // Go
+                return false;
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function() {
+            $('.carousel').carousel();
+        });
+
+    </script>
+</head>
+
+<body>
+    <nav role="navigation">
+        <div class="nav-wrapper container">
+            <ul class="right hide-on-med-and-down">
+                <li><a class="js-scrollTo" href="index.html">Accueil</a></li>
+                <li><a class="js-scrollTo" href="index.html">La carte</a></li>
+                <li><a href="concept.html">Le concept</a></li>
+                <li><a href="concept.html" class="js-scrollTo" href="concept.html">La franchise</a></li>
+                <li><a href="contact.html">Infos pratiques</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a class="js-scrollTo" href="index.html">Accueil</a></li>
+                <li><a class="js-scrollTo" href="index.html">La carte</a></li>
+                <li><a href="concept.html">Le concept</a></li>
+                <li><a href="concept.html" class="js-scrollTo" href="concept.html">La franchise</a></li>
+                <li><a href="contact.html">Infos pratiques</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <div id="index-banner-4" class="parallax-container">
+        <div class="section no-pad-bot center">
+            <div>
+                <h6>Infos pratiques</h6>
+            </div>
+            <div>
+                <img alt="underline" src="underline.png">
+            </div>
+        </div>
+        <div class="parallax"><img src="concept_sous_menu_bck.png" alt="bck_header_index"></div>
+    </div>
+    <div id="section_21" class="container">
+        <div class="section">
+            <div class="center">
+                <h4>La Cabane à Burger Pontchâteau</h4>
+            </div>
+            <div class="row valign-wrapper">
+                <div class="center col s12 m12 l3 xl3">
+                    <p>Route de Nantes<br>Zone Industrielle du Landas<br>(parking Océane Habitat)<br>44160 PONTCHÂTEAU</p>
+                    <p class="bold">02 51 75 39 32</p>
+                    <p class="bold">La Cabane à Burger</p>
+                    <a target="_blank" href="https://www.facebook.com/La-Cabane-A-Burger-2024129584480172/">facebook</a>
+                </div>
+                <div class="col s12 m12 l6 xl6">
+                    <img src="contact_img_cab.png">
+                </div>
+                <div class="center col s12 m12 l3 xl3">
+                    <p class="bold">Horaires d’ouverture :</p>
+                    <p>Du lundi au Jeudi<br>11h30 - 13h30 / 18h00 - 21h30<br>Vendredi - Samedi<br>11h30 - 13h30 / 18h00 - 22h00<br>Dimanche et jours fériés<br>18h00 - 22h00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="index-banner-5" class="parallax-container">
+        <div class="section no-pad-bot center">
+            <div>
+                <img alt="logo_cab" src="logo_cabane_burger.png">
+            </div>
+        </div>
+        <div class="parallax"><img src="footer_contact_page.png" alt="bck_header_index"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>

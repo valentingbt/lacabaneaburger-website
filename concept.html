@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>La Cabane à Burger</title>
+    <link rel="icon" href="favicon.png" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                var page = $(this).attr('href'); // Page cible
+                var speed = 750; // Durée de l'animation (en ms)
+                $('html, body').animate({
+                    scrollTop: $(page).offset().top
+                }, speed); // Go
+                return false;
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function() {
+            $('.carousel').carousel();
+        });
+
+    </script>
+</head>
+
+<body>
+    <nav role="navigation">
+        <div class="nav-wrapper container">
+            <ul class="right hide-on-med-and-down">
+                <li><a class="js-scrollTo" href="index.html">Accueil</a></li>
+                <li><a class="js-scrollTo" href="index.html">La carte</a></li>
+                <li><a href="concept.html">Le concept</a></li>
+                <li><a class="js-scrollTo" href="#index-banner-3">La franchise</a></li>
+                <li><a href="contact.html">Infos pratiques</a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+                <li><a class="js-scrollTo" href="index.html">Accueil</a></li>
+                <li><a class="js-scrollTo" href="index.html">La carte</a></li>
+                <li><a href="concept.html">Le concept</a></li>
+                <li><a class="js-scrollTo" href="#index-banner-3">La franchise</a></li>
+                <li><a href="contact.html">Infos pratiques</a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <div id="index-banner-2" class="parallax-container">
+        <div class="section no-pad-bot center">
+            <div>
+                <h6>Le concept de la Cabane à Burger</h6>
+            </div>
+            <div>
+                <img alt="underline" src="underline.png">
+            </div>
+        </div>
+        <div class="parallax"><img src="concept_sous_menu_bck.png" alt="bck_header_index"></div>
+    </div>
+    <div id="section_11" class="container">
+        <div class="section">
+            <div class="row valign-wrapper">
+                <div class="col s12 m12 l6 xl6">
+                    <h4>Notre savoir-faire</h4>
+                    <p class="light">La Cabane à Burger, c’est des burgers gourmets à la Française, cuisinés à base de produits frais* sélectionnés par nos soins, sur demande et à la commande, à déguster sur place ou à emporter.<br><br>Notre pain bio, fabriqué spécialement pour nous suivant une recette tenue secrète, s’agrémente d’un steak haché et de légumes frais. Justes salées ou saupoudrées de notre mélange spécial d’ail et de paprika doux pour relever le bon gout de la pomme de terre, nos frites fraiches complètent l’expérience d’un repas savoureux cuisiné devant vous.<br><br>Pour prolonger la découverte, retrouvez chaque mois une nouvelle recette pensée et travaillée au gré des expériences gustatives des chefs.<br><br>Nos clients le disent :
+                    </p>
+                    <p class="light bold">« La qualité des ingrédients se ressent à la première bouchée ! »</p>
+                </div>
+                <div class="col s12 m12 l6 xl6">
+                    <img src="concept_burger.png">
+                    <p class="light italic">* hormis galettes de pommes de terre, nuggets et filet de poulet pané, produits surgelés.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section_12">
+        <div class="container">
+            <div class="section">
+                <div class="row valign-wrapper">
+                    <div class="col s12 m12 l4 xl6">
+                        <img src=photo_createurs.png>
+                    </div>
+                    <div class="col s12 m12 l8 xl6">
+                        <h4>Les créateurs</h4>
+                        <p>Charcutier Traiteur de formation, Laurent (à gauche) exerce depuis de nombreuses années le métier de pizzaiolo en tant que gérant d’établissement. Découvrant la qualité de ses pizzas, on lui suggère de se lancer dans les burgers, nouvelle tendance de la restauration. Séduit par le challenge et motivé par l’envie de proposer une alternative de qualité face aux fast food et aux grandes enseignes, il crée en 2016 la 1ère Cabane à Burger surnommée par ses clients <i>La Cab</i>.<br><br>Roland (à droite) est gérant depuis 10 ans de deux établissements de restauration. Issu d’une famille de fromagers, il a parcouru les étals de marchés à leurs côtés, développant ainsi son goût et sa compétence à sélectionner des produits frais de qualité.<br><br>Partageant les mêmes valeurs de la bonne cuisine, Roland rejoint rapidement Laurent pour développer <i>La Cab</i> en réseau de franchise. Ils décident alors de proposer à d’autres passionnés de cuisine une solution clé en main pour se lancer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="index-banner-3" class="parallax-container">
+        <div class="section no-pad-bot center">
+            <div class="center">
+                <img alt="underline" src="underline_black.png">
+            </div>
+            <div class="container">
+                <div class="section">
+                    <div class="row">
+                        <div class="col s12 m12 l6 xl6">
+                            <h4>La franchise</h4>
+                            <img alt="ici_icon" src="ici_icon_2.png">
+                            <p class="bold">Vous souhaitez devenir franchisé ?<br>Vous avez la volonté de lancer votre propre Cabane à Burger ?</p>
+                            <p class="bold">Faites-le-nous savoir !</p>
+                            <a id="commande_button" href="https://goo.gl/forms/Vofp95dxd0XohwKf2" target="_blank">EN SAVOIR +</a>
+                        </div>
+                        <div class="col s12 m12 l6 xl6">
+                            <p class="bold">Le goût d'apprendre et d'entreprendre</p>
+                            <p class="bold">Vos avantages :</p>
+                            <p>- Un <strong>investissement minimum</strong>, pour une <strong>rentabilité maximum.</strong><br> - Une <strong>solution clé en main</strong> : vous signez, vous vous lancez !<br> - <strong>Formation et accompagnement assurés</strong> (conseil sur le choix du lieu d’implantation, installation de la structure, réseau d’approvisionnement négocié...)<br> - Une carte nationale partagée, mais aussi <strong>une liberté de création de recettes</strong> suivant vos envies et vos régions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="bck_concept_section_franchise.png" alt="bck_header_index"></div>
+    </div>
+    <footer>
+        <div class="section center">
+            <div class="container">
+                <div class="row valign-wrapper">
+                    <div class="col s12 m4 l3 xl3">
+                        <p class="light center">Route de Nantes<br>Zone Industrielle du Landas<br>(parking Océane Habitat)<br>44160 PONTCHÂTEAU</p>
+                    </div>
+                    <div class="col s12 m4 l6 xl6">
+                        <p class="cursive light center">La Cabane à Burger Pontchâteau</p>
+                        <p class="cursive light center">02 51 75 39 32</p>
+                    </div>
+                    <div class="col s12 m4 l3 xl3">
+                        <a target="_blank" href="https://www.facebook.com/La-Cabane-A-Burger-2024129584480172/">
+                            <p class="light center">La Cabane à Burger</p>
+                            <img alt="fb_icon" src="fb_icon.png">
+                            <a href="mentionlegales.html"><u>Mentions légales</u></a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>
