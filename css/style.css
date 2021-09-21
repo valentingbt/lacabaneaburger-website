@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "RipOff";
+    src: url("../fonts/Ripoff.ttf") format("truetype")
+}
+
 nav ul a,
 nav .brand-logo {
     color: #444;
@@ -191,6 +196,46 @@ nav ul a:hover {
     color: #0e446b;
 }
 
+.newtitle {
+    font-family: RipOff, Arial, sans-serif;
+    font-size: 3em;
+    color: #3f2417;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.title-block {
+    display: flex;
+    align-items: center;
+}
+
+.title-dots {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.title-dots div {
+    background-color: black;
+    margin-right: 10px;
+    border-radius: 500px;
+}
+
+.title-dots .dot1 {
+    width: 13px;
+    height: 13px;
+}
+
+.title-dots .dot2 {
+    width: 10px;
+    height: 10px;
+}
+
+.title-dots .dot3 {
+    width: 5px;
+    height: 5px;
+}
+
 /* INDEX */
 
 #index-banner {
@@ -290,14 +335,14 @@ nav ul a:hover {
     margin-right: 15px;
 }
 
-#section_3 > div:nth-child(1) > div > div > img {
-    width: 10vw;
-}
+/*#section_3 > div:nth-child(1) > div > div > img {*/
+/*    width: 10vw;*/
+/*}*/
 
-#section_3 > div:nth-child(5) {
-    text-align: center;
-    margin-top: 25px;
-}
+/*#section_3 > div:nth-child(5) {*/
+/*    text-align: center;*/
+/*    margin-top: 25px;*/
+/*}*/
 
 /* #section_3 > div:nth-child(2) {
     border-bottom: 2px solid #3c1b0c;
@@ -430,7 +475,7 @@ nav ul a:hover {
 }
 
 #section_8000 {
-    background-image: url("menu_2_bck.jpg");
+    background-image: url("../assets/menu_2_bck.jpg");
 }
 
 /* CONCEPT */
@@ -633,19 +678,19 @@ footer > div > div > div > div:nth-child(3) > a:nth-child(2) {
     #index-banner-4 > div.section.no-pad-bot.center {
         top: 0;
     }
-    
+
     #index-banner-3 {
         min-height: 490px;
     }
-    
+
     #index-banner-3 > div.section.no-pad-bot.center > div.container > div > div {
         margin-top: 30px;
     }
-    
+
     #section_5 > div > div > div {
         line-height: normal;
     }
-    
+
     #section_5 > div > div > div > div {
         height: auto;
     }
@@ -770,14 +815,16 @@ footer > div > div > div > div:nth-child(3) > a:nth-child(2) {
         padding-right: 0;
     }
 
-    #section_3 > div:nth-child(3) > div > div > div > div.col.s12.m1.l1.xl1,
-    #section_3 > div:nth-child(4) > div > div > div > div.col.s12.m1.l1.xl1 {
+    #section_3 > div > div > div > p {
+        text-align: center;
+    }
+
+    #section_3 > div > div > div > div > div.col.s12.m1.l1.xl1 {
         text-align: center;
         padding-top: 5%;
     }
 
-    #section_3 > div:nth-child(3) > div > div > div > div.col.s12.m11.l11.xl11,
-    #section_3 > div:nth-child(4) > div > div > div > div.col.s12.m11.l11.xl11 {
+    #section_3 > div > div > div > div > div.col.s12.m11.l11.xl11 {
         text-align: center;
     }
 
